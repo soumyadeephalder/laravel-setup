@@ -1,0 +1,206 @@
+<aside class="main-sidebar">
+  <section class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="header">MAIN NAVIGATION</li>
+      <li class="{{ Request::is('/admin/dashboard')?'active':''}}">
+        <a href="<?php echo url('/admin/dashboard');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="facaltylist"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Facalty list</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="facaltylist"?'active':''}}">
+            <a href="<?php echo url('/admin/facaltylist');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        </ul>
+      </li>
+       <li class="treeview {{ Request::segment(1)=="educator"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Educator</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="educator"?'active':''}}">
+            <a href="<?php echo url('/admin/educator');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="soldcontents"?'active':''}}">
+            <a href="<?php echo url('/admin/educator/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+       <li class="treeview {{ Request::segment(1)=="book"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Book list</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="book"?'active':''}}">
+            <a href="<?php echo url('/admin/book');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+          <li class="{{ Request::segment(1)=="book"?'active':''}}">
+            <a href="<?php echo url('/admin/book/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="enrolment"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Enrolment list</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="enrolment"?'active':''}}">
+            <a href="<?php echo url('/admin/enrolment');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+          <li class="{{ Request::segment(1)=="enrolment"?'active':''}}">
+            <a href="<?php echo url('/admin/enrolment/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+ 	<li class="treeview {{ Request::segment(1)=="testseries"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Testseries list</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="testseries"?'active':''}}">
+            <a href="<?php echo url('/admin/testseries');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+          <li class="{{ Request::segment(1)=="testseries"?'active':''}}">
+            <a href="<?php echo url('/admin/testseries/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="course"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Course list</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="course"?'active':''}}">
+            <a href="<?php echo url('/admin/course');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+          <li class="{{ Request::segment(1)=="course"?'active':''}}">
+            <a href="<?php echo url('/admin/course/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+       <li class="treeview {{ Request::segment(1)=="soldcontents"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Content Type</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="soldcontents"?'active':''}}">
+            <a href="<?php echo url('/admin/soldcontents');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="soldcontents"?'active':''}}">
+            <a href="<?php echo url('/admin/soldcontents/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="typeentity"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Entity Type</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="typeentity"?'active':''}}">
+            <a href="<?php echo url('/admin/typeentity');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="typeentity"?'active':''}}">
+            <a href="<?php echo url('/admin/typeentity/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="coachingtype"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Coaching Classes</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="coachingtype"?'active':''}}">
+            <a href="<?php echo url('/admin/coachingtype');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="coachingtype"?'active':''}}">
+            <a href="<?php echo url('/admin/coachingtype/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+       <li class="treeview {{ Request::segment(1)=="level"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Levels</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="level"?'active':''}}">
+            <a href="<?php echo url('/admin/level');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="level"?'active':''}}">
+            <a href="<?php echo url('/admin/level/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="degree"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Degrees</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="degree"?'active':''}}">
+            <a href="<?php echo url('/admin/degree');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="degree"?'active':''}}">
+            <a href="<?php echo url('/admin/degree/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview {{ Request::segment(1)=="subject"?'active':''}}">
+        <a href="#">
+        <i class="fa fa-user"></i> <span>Subject</span>
+        <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="{{ Request::segment(1)=="subject"?'active':''}}">
+            <a href="<?php echo url('/admin/subject');?>"><i class="fa fa-circle-o"></i> View all</a>
+          </li>
+        
+          <li class="{{ Request::segment(1)=="subject"?'active':''}}">
+            <a href="<?php echo url('/admin/subject/create');?>"><i class="fa fa-circle-o"></i> Add</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</aside>
