@@ -4,10 +4,6 @@ A simple implementation of multiple authentication in Laravel.
 To follow along, this application has been documented as an article on Pusher blog. You can read about it [here](https://pusher.com/tutorials/multiple-authentication-guards-laravel)
 
 ## Set up
-To set up this project, first clone the repositiory
-```bash
-$ git clone https://github.com/fisayoafolayan/laravel-multiple-auth.git
-```
 
 Change your working directory into the project directory
 ```bash
@@ -22,11 +18,6 @@ $ composer install
 Copy `.env.example` to `.env`
 ```bash
 $ cp .env.example .env
-```
-
-Create the database file
-```bash
-$ touch database/database.sqlite
 ```
 
 ## Run
