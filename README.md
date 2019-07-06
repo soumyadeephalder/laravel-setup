@@ -36,7 +36,9 @@ $ php artisan serve
 ```
 
 ## create model and controler and migrations commnd 
-php artisan make:model Models/<name> -m -c -r
+```bash
+$ php artisan make:model Models/<name> -m -c -r
+```
 
 ## Built With
 [Laravel](https://laravel.com/) - The PHP Framework For Web Artisans.
