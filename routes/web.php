@@ -29,14 +29,7 @@ Route::post('/logout', 'Auth\AdminLoginController@logout');
 // new route difine no use construct middleware bcose all link use via api
 
 // Route::resource('course', 'Admin\CourseController'); //->middleware('auth:admin');
-// Route::resource('centre', 'Admin\CentreController'); //->middleware('auth:admin');
-// Route::resource('subject', 'Admin\SubjectController'); //->middleware('auth:admin');
-// Route::resource('chapter', 'Admin\ChapterController'); //->middleware('auth:admin');
-// Route::resource('exam', 'Admin\ExamController'); //->middleware('auth:admin');
 
-
-
-Route::resource('details', 'Admin\ChapterDetailsController'); //->middleware('auth:admin');
 
 
 
