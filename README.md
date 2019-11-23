@@ -7,7 +7,7 @@ To follow along, this application has been documented as an article on Pusher bl
 
 Change your working directory into the project directory
 ```bash
-$ cd laravel-multiple-auth
+$ cd laravel-setup
 ```
 
 Then install dependencies using [Composer](https://getcomposer.org/doc/00-intro.md)
