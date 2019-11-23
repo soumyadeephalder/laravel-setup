@@ -19,6 +19,10 @@ Copy `.env.example` to `.env`
 ```bash
 $ cp .env.example .env
 ```
+## generate key
+```bash
+$ php artisan key:generate
+```
 
 ## Run
 Run the application with the following command
